@@ -4,12 +4,10 @@ import NotFound from './404';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    // Usa import.meta.env.BASE_URL para sincronizar con la propiedad base de vite.config.ts
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
-        {/* Ruta principal para el portafolio */}
         <Route path="/" element={<Portfolio />} />
-
-        {/* Ruta comodín (*) para capturar cualquier URL inexistente y mostrar la 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
