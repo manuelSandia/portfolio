@@ -41,7 +41,7 @@ export default function Portfolio() {
       <Background3D />
 
       {/* Navegación */}
-      <nav className="fixed top-0 w-full backdrop-blur-md bg-slate-950/40 border-b border-slate-800/50 z-50 px-6 py-4">
+      {/* <nav className="fixed top-0 w-full backdrop-blur-md bg-slate-950/40 border-b border-slate-800/50 z-50 px-6 py-4">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <span className="font-bold text-lg tracking-wider text-blue-400">DEV.PORTFOLIO</span>
           <div className="flex gap-6 text-sm text-slate-400">
@@ -49,6 +49,37 @@ export default function Portfolio() {
             <a href="#cv" className="hover:text-blue-400 transition-colors">Curriculum</a>
             <a href="#proyectos" className="hover:text-blue-400 transition-colors">Proyectos</a>
             <a href="#contacto" className="hover:text-blue-400 transition-colors">Contacto</a>
+          </div>
+        </div>
+      </nav> */}
+      <nav className="fixed top-0 w-full backdrop-blur-md bg-slate-950/40 border-b border-slate-800/50 z-50 px-6 py-4">
+        <div className="max-w-5xl mx-auto flex justify-between items-center">
+          <span className="font-bold text-lg tracking-wider text-blue-400">DEV.PORTFOLIO</span>
+          <div className="flex gap-6 text-sm text-slate-400 cursor-pointer">
+            <button 
+              onClick={() => document.getElementById('sobre-mi')?.scrollIntoView({ behavior: 'smooth' })}
+              className="hover:text-blue-400 transition-colors bg-transparent border-0"
+            >
+              Sobre mí
+            </button>
+            <button 
+              onClick={() => document.getElementById('cv')?.scrollIntoView({ behavior: 'smooth' })}
+              className="hover:text-blue-400 transition-colors bg-transparent border-0"
+            >
+              Curriculum
+            </button>
+            <button 
+              onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}
+              className="hover:text-blue-400 transition-colors bg-transparent border-0"
+            >
+              Proyectos
+            </button>
+            <button 
+              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              className="hover:text-blue-400 transition-colors bg-transparent border-0"
+            >
+              Contacto
+            </button>
           </div>
         </div>
       </nav>
