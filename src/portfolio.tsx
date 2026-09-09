@@ -110,7 +110,7 @@ export default function Portfolio() {
             <a href="https://github.com/manuelSandia" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors">
               <FaGithub className="w-5 h-5 text-slate-300" />
             </a>
-            <a href="https:www.linkedin.com/in/sandiamanuel" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors">
+            <a href="www.linkedin.com/in/sandiamanuel" target="_blank" rel="noreferrer" className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors">
               <FaLinkedin className="w-5 h-5 text-slate-300" />
             </a>
             <a href="mailto:sandiamanuel@gmail.com" className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors">
